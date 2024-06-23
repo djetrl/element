@@ -59,6 +59,7 @@ body{
 
 .item_group{
   display: flex;
+  align-items: center;
   gap: 0.8em;
 }
 .item_content{
@@ -130,4 +131,27 @@ body{
 }
 .btn:hover{
   text-decoration: underline;
+}
+
+
+
+/* Для мобильных устройств */
+@media only screen and (max-width: 600px) {
+  .item{
+    flex-direction: column;
+    gap: 1.4em;
+  }
+  .item_group{
+    align-items:center;
+  }
+}
+
+
+
+/* Для десктопов */
+@media only screen and (min-width: 1625px) {
+  .item-list{
+    max-width: 1200px ;
+    --fontSize:26px;
+  }
 }
